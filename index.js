@@ -47,8 +47,8 @@ function checkCollision(rock) {
     //            *    and the rock's right edge is > the DODGER's right edge
     //            */) {
     return (
-      false
-      //(rockLeftEdge <= dodgerLeftEdge && rockRightEdge >= dodgerLeftEdge) || (rockLeftEdge >= dodgerLeftEdge && rockRightEdge <= dodgerRightEdge) || (rockLeftEdge <= dodgerRightEdge && rockRightEdge >= dodgerRightEdge)
+      
+      (rockLeftEdge <= dodgerLeftEdge && rockRightEdge >= dodgerLeftEdge) || (rockLeftEdge >= dodgerLeftEdge && rockRightEdge <= dodgerRightEdge) || (rockLeftEdge <= dodgerRightEdge && rockRightEdge >= dodgerRightEdge)
     )
   }
 }
@@ -125,14 +125,11 @@ function moveDodger(e) {
    * we've declared for you above.)
    * And be sure to use the functions declared below!
    */
-
-   document.addEventListener('keydown', function(e) {
      if (e.which === 37) {
        moveDodgerLeft();
      } else if (e.which === 39) {
        moveDodgerRight();
      }
-   });
 
 }
 
