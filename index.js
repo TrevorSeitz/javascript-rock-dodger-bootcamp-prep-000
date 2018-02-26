@@ -85,9 +85,8 @@ function createRock(x) {
      * we should call endGame()
      */
     if (rock.style.top !== 0) {
-      moveRock()
+      window.requestAnimationFrame(moveRock)
     } else {
-
         rock.remove()
     }
     /**
