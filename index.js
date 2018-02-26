@@ -160,7 +160,7 @@ function moveDodgerRight() {
    var right = parseInt(rightNumbers, 10);
 
    if (right > 0) {
-     dodger.style.right = `${left + 4}px`;
+     dodger.style.right = `${right - 4}px`;
    }
 }
 
