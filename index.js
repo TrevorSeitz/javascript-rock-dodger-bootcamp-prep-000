@@ -87,7 +87,7 @@ function createRock(x) {
     if (rock.style.top !== 0) {
       moveRock()
     } else {
-      
+
         rock.remove()
     }
     /**
