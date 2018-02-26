@@ -112,6 +112,7 @@ function createRock(x) {
 function endGame() {
   clearInterval(gameInterval)
   ROCKS.forEach(function(rock) {rock.remove()})
+  // .remove removes the rock from the DOM - forEach does it for each rock in the array
   window.removeEventListener('keydown', moveDodger)
   alert = 'YOU LOSE!'
 
