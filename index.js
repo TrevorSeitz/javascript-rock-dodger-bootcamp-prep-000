@@ -85,7 +85,7 @@ function createRock(x) {
      * If a rock collides with the DODGER,
      * we should call endGame()
      */
-    if (top < 360) {
+    if (top < GAME_HEIGHT) {
       window.requestAnimationFrame(moveRock)
     } else {
         rock.remove()
@@ -102,7 +102,7 @@ function createRock(x) {
   }
 
   // We should kick of the animation of the rock around here
-
+  window.requestAnimationFrame(moveRock)
   // Add the rock to ROCKS so that we can remove all rocks
   // when there's a collision
   ROCKS.push(rock)
