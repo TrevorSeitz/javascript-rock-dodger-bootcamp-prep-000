@@ -77,11 +77,19 @@ function createRock(x) {
   function moveRock() {
     // implement me!
     // (use the comments below to guide you!)
+    if (checkCollision) {
+      endGame()
+    }
     /**
      * If a rock collides with the DODGER,
      * we should call endGame()
      */
-
+    if (rock.style.top !== 0) {
+      moveRock()
+    } else {
+      
+        rock.remove()
+    }
     /**
      * Otherwise, if the rock hasn't reached the bottom of
      * the GAME, we want to move it again.
